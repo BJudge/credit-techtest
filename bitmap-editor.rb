@@ -1,5 +1,4 @@
 #!/usr/bin/ruby
-require 'enumerator'
 # how does the user input their commands - https://stackoverflow.com/questions/9853853/creating-interactive-ruby-console-application
  
 
@@ -100,7 +99,17 @@ class Canvas
         end
     end
     def manual()
-        puts "Hello from ?"
+        puts "
+        I M N       - Create a new M x N canvas with all pixels coloured white
+        C           - Clears canvas 
+        L X Y C     - Colours the pixel (X,Y) with colour C
+        V X Y1 Y2 C - Draw a vertical segment of colour C in column X between rows Y1 and Y2 (inclusive)
+        H X1 X2 Y C - Draw a horizontal segment of colour C in row Y between columns X1 and X2 (inclusive)
+        F X Y C     - Fill the region (X,Y) with the colour C
+        W F         - Scales the canvas with the given factor F
+        S           - Show the contents of the current canvas
+        X           - Terminate the session
+        ?           - Shows in program help"
     end
     
 
@@ -171,28 +180,8 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 new_canvas = Canvas.new()
 new_canvas.I(3,2)
-new_canvas.S()
-puts ""
-new_canvas.W(75)
-puts ""
-new_canvas.S()
+new_canvas.manual()
+
 
