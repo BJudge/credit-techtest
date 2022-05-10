@@ -1,4 +1,4 @@
-# credit-techtest
+# Creditspring - Techtest
 
 Here is my attempt for Creditspring technical test.
 
