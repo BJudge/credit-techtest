@@ -104,7 +104,7 @@ class Canvas
     end
 
     def manual()
-        puts "
+       return puts "
         I M N       - Create a new M x N canvas with all pixels coloured white
         C           - Clears canvas 
         L X Y C     - Colours the pixel (X,Y) with colour C

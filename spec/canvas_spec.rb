@@ -1,5 +1,4 @@
 require './canvas.rb'
-# I haven't written a test for the manual method because it just prints to the console. Therefore it return no value to be tested against.
 
 RSpec.describe 'Canvas Class' do
     # before {@new_canvas = Canvas.new()}
